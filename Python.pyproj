@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8d6bf0a3-8f2a-4279-b651-23ba6ad5fa99}</ProjectGuid>
     <ProjectHome />
-    <StartupFile />
+    <StartupFile>pygal_worldmap.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -22,9 +22,33 @@
     <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="die.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="hello_world.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="matplotlib_plot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="matplotlib_scatter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="matplotlib_scatter_random_walk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pygal_bar.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pygal_worldmap.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="random_walk.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
